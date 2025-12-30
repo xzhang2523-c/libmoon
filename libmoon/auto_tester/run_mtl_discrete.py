@@ -13,7 +13,6 @@ from libmoon.solver.gradient import MGDAUBCore, PMGDACore, MOOSVGDCore, GradHVCo
 from libmoon.solver.gradient.methods.core.core_mtl import GradBaseMTLSolver
 from libmoon.util.mtl import get_mtl_prefs
 from libmoon.util.constant import plt_2d_tickle_size, plt_2d_marker_size, plt_2d_label_size
-from libmoon.problem.mtl.objectives import from_name
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 libmoon_dir = os.path.dirname(os.path.dirname(current_dir))

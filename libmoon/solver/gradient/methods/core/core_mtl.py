@@ -41,6 +41,8 @@ class GradBasePSLMTLSolver:
         self.agg_name = self.solver_name.split('_')[-1] if self.is_agg else None
 
     def solve(self):
+        print('epoch', self.epoch)
+
         loss_epoch = []
         for epoch_idx in tqdm(range(self.epoch)):
             loss_batch = []
