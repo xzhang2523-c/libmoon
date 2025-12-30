@@ -2,7 +2,7 @@
    <img  src="img/logo.png" alt="Model" style="width: 60%; height: auto; " />
 </div>
 
-# LibMOON: A Gradient-based MultiObjective OptimizatioN Library in PyTorch
+# LibMOON: qweA Gradient-based MultiObjective OptimizatioN Library in PyTorch
 [![Documentation Status](https://readthedocs.org/projects/libmoondocs/badge/?version=latest)](https://libmoondocs.readthedocs.io/en/latest/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/xzhang2523/libmoon/blob/main/LICENSE)
 [![PyPI version](https://badge.fury.io/py/LibMOON.svg)](https://badge.fury.io/py/LibMOON)
@@ -203,7 +203,3 @@ LibMOON is not allowed for commercial use without permission. For commerical use
 [![Star History Chart](https://api.star-history.com/svg?repos=xzhang2523/libmoon&type=Date)](https://star-history.com/#xzhang2523/libmoon&Date)
 
 
-#   l i b m o o n 
- 
- #   h y b r i d e v o  
- 
