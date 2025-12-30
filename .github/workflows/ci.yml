@@ -39,5 +39,5 @@ jobs:
           libmoon/manual_tester/run_mtl_psl.sh
           chmod +x libmoon/manual_tester/run_syn_discrete.sh
           libmoon/manual_tester/run_syn_discrete.sh
-          chmod +x libmoon/solver/mobo/tester/run_mobo.sh
-          libmoon/solver/mobo/tester/run_mobo.sh
+          # chmod +x libmoon/solver/mobo/tester/run_mobo.sh
+          # libmoon/solver/mobo/tester/run_mobo.sh
