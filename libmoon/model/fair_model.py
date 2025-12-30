@@ -51,5 +51,4 @@ class FullyConnected(nn.Module):
             )
 
     def forward(self, data):
-        # x = batch['data']
         return dict(logits=self.f(data))

@@ -5,13 +5,12 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 seed_num=3
-
+epoch=1
 for seed in $(seq 0 $(($seed_num)))
 do
   for solver_name in mgdaub random epo pmgda agg_ls agg_tche agg_pbi agg_cosmos pmtl hvgrad moosvgd
-  #for solver_name in agg_mtche agg_softmtche agg_softtche
   do
-    python "$SCRIPT_DIR/run_mtl_discrete.py" --problem-name adult --solver-name $solver_name --use-plt False --epoch 10 --seed-idx $seed
+    python "$SCRIPT_DIR/run_mtl_discrete.py" --problem-name adult --solver-name $solver_name --use-plt False --epoch $epoch --seed-idx $seed
   done
 done
 
