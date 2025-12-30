@@ -5,7 +5,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 seed_num=1
-epoch=2
+epoch=1
 
 for seed in $(seq 0 $(($seed_num)))
 do
