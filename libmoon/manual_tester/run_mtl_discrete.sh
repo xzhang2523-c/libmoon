@@ -4,7 +4,7 @@ set -euo pipefail
 # Resolve directory of this script
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-seed_num=3
+seed_num=1
 epoch=1
 for seed in $(seq 0 $(($seed_num)))
 do

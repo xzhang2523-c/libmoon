@@ -7,6 +7,7 @@ from libmoon.solver.gradient.methods.core.core_mtl import GradBasePSLMTLSolver
 import os
 from libmoon.util.constant import root_name, plt_2d_tickle_size, plt_2d_marker_size, plt_2d_label_size
 
+
 def save_pickle(folder_name, res):
     pickle_name = os.path.join(folder_name, 'res.pickle')
     with open(pickle_name, 'wb') as f:

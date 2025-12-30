@@ -6,7 +6,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 problem=regression
-seed_num=3
+seed_num=1
 
 # mgdaub random epo pmgda
 # preference-based: agg_ls agg_tche agg_pbi agg_cosmos, agg_softtche
