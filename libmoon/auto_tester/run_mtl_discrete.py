@@ -89,8 +89,7 @@ if __name__ == '__main__':
     res = solver.solve()
     
     res['prefs'] = prefs
-    res['y'] = res['loss']
-    loss = res['loss']
+    loss = res['y'] = res['loss']
 
     folder_name = os.path.join(root_name, 'Output', 'discrete', args.problem_name, args.solver_name,
                                'seed_{}'.format(args.seed_idx))
