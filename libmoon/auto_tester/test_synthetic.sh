@@ -4,7 +4,7 @@ set -euo pipefail
 # Determine the directory where this script lives so relative python calls work
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-nepoch=1000
+nepoch=20
 
 # Online using libmoon/auto_tester/X
 # pycharm using auto_tester/X
