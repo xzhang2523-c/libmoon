@@ -64,7 +64,6 @@ if __name__ == '__main__':
 
     model = model_from_dataset(args.problem_name)
     num_param = numel(model)
-    print('Number of parameters: {}'.format(num_param))
     prefs = get_mtl_prefs(problem_name=args.problem_name, n_prob=args.n_prob)
     if args.solver_name == 'epo':
         core_solver = EPOCore(n_var=num_param, prefs=prefs)

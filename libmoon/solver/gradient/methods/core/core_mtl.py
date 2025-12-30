@@ -69,7 +69,6 @@ class GradBasePSLMTLSolver:
                         weight_tensors = list(weights.values())
                         weight_keys = list(weights.keys())
                         # Compute the gradients with respect to the list of tensors
-                        # The result 'g' will be a tuple of tensors
                         g_tuple = torch.autograd.grad(loss, weight_tensors, retain_graph=True)
                         # Reconstruct a dictionary for the gradients
                         dict_grad = dict(zip(weight_keys, g_tuple))
