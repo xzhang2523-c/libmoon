@@ -42,7 +42,6 @@ class GradBasePSLMTLSolver:
 
     def solve(self):
         print('epoch', self.epoch)
-
         loss_epoch = []
         for epoch_idx in tqdm(range(self.epoch)):
             loss_batch = []
@@ -120,6 +119,8 @@ class GradBaseMTLSolver:
         self.step_size = step_size
         self.problem_name = problem_name
         self.epoch = epoch
+        print('epoch', self.epoch)
+
         self.n_prob = len(prefs)
         self.batch_size = batch_size
         self.dataset = get_dataset(self.problem_name)
