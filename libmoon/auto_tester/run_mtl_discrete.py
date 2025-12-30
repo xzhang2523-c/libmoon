@@ -84,6 +84,7 @@ if __name__ == '__main__':
     else:
         assert False, 'Unknown solver'
 
+    print('begin training... epoch:', args.epoch)
     solver = GradBaseMTLSolver(problem_name=args.problem_name, step_size=args.step_size, epoch=args.epoch, core_solver=core_solver,
                                batch_size=args.batch_size, prefs=prefs)
     res = solver.solve()
