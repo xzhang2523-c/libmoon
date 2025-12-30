@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e .
 
-      - name: Run all tester scripts under tester / manual_tester / auto_tester
+      - name: Run all tester scripts under tester  / auto_tester
         env:
           MPLBACKEND: Agg
         shell: bash
@@ -33,11 +33,11 @@ jobs:
           set -euo pipefail
           chmod +x libmoon/auto_tester/test_synthetic.sh
           libmoon/auto_tester/test_synthetic.sh
-          chmod +x libmoon/manual_tester/run_mtl_discrete.sh
-          libmoon/manual_tester/run_mtl_discrete.sh
-          chmod +x libmoon/manual_tester/run_mtl_psl.sh
-          libmoon/manual_tester/run_mtl_psl.sh
-          chmod +x libmoon/manual_tester/run_syn_discrete.sh
-          libmoon/manual_tester/run_syn_discrete.sh
+          chmod +x libmoon/auto_tester/run_mtl_discrete.sh
+          libmoon/auto_tester/run_mtl_discrete.sh
+          chmod +x libmoon/auto_tester/run_mtl_psl.sh
+          libmoon/auto_tester/run_mtl_psl.sh
+          chmod +x libmoon/auto_tester/run_syn_discrete.sh
+          libmoon/auto_tester/run_syn_discrete.sh
           # chmod +x libmoon/solver/mobo/tester/run_mobo.sh
           # libmoon/solver/mobo/tester/run_mobo.sh
