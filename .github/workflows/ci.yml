@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e .
 
-      - name: Run all tester scripts under tester  / auto_tester
+      - name: Run all tester scripts under tester / manual_tester / auto_tester
         env:
           MPLBACKEND: Agg
         shell: bash
