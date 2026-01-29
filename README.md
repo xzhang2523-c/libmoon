@@ -12,7 +12,6 @@
 [![Paper](https://img.shields.io/badge/arxiv-paper-blue)](https://arxiv.org/abs/2409.02969) 
 
 ``LibMOON`` is an open-source library built on [PyTorch](https://pytorch.org/) for gradient based MultiObjective (MOO). See the [latest documentation](https://readthedocs.org/projects/libmoondocs/badge/?version=latest) for detailed introductions and API instructions.
-This code is the official implement for "LibMOON: A Gradient-based MultiObjective OptimizatioN Library in PyTorch. NeurIPS 2024"
 
 Star or fork us on GitHub — it motivates us a lot!
 
