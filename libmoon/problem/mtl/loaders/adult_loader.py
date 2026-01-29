@@ -44,9 +44,8 @@ def load_dataset(path, s_label):
 
     # encode categorical values
     data1 = data.copy()
-    data1 = pd.get_dummies(data1)
     data1 = data1.drop(['income', s_label], axis=1)
-    # data1 = data1.drop(['income', s_label], axis=1)
+    data1 = pd.get_dummies(data1)
 
     X = StandardScaler().fit(data1).transform(data1)
     y = data['income'].values
