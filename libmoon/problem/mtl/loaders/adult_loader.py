@@ -33,10 +33,12 @@ def load_dataset(path, s_label):
     # income
     data.income = data.income.replace('<=50K', 0)
     data.income = data.income.replace('>50K', 1)
+    data.income = data.income.astype(int)
 
     # sex
     data.gender = data.gender.replace('Male', 0)
     data.gender = data.gender.replace('Female', 1)
+    data.gender = data.gender.astype(int)
     
     # mtldata.race = mtldata.race.replace('White', 0)
     # mtldata.race = mtldata.race.replace('Black', 1)
